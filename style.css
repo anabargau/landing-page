@@ -11,12 +11,18 @@ body{
 }
 
 .img{
-    width: 200px;
-    height: 200px;
+    height:auto;
+    width:auto;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    border-radius: 10px;
 }
 header img{
-    width: 350px;
-    height: 200px;
+    width: auto;
+    max-width: 350px;
+    max-height: 175px;
+    height: auto;
 }
 ul{
     list-style-type: none;
@@ -27,7 +33,7 @@ ul{
 }
 a{
     text-decoration: none;
-    color: #f9faf8
+    color: #f9faf8;
 }
 header,
 footer{
@@ -46,28 +52,37 @@ footer{
 .logo{
     font-size: 24px;
     color: #f9faf8;
+    font-weight: 900;
 }
 .sign-up-container{
     background-color: #3882f6;
 }
 button{
     background-color: #3882f6;
-    width: 100px;
+    width: 120px;
     color: white;
     border-radius:10px;
-    padding: 10px;
+    padding: 10px 15px;
+    font-weight: 900;
+     border: 0;
+    
 }
+button:hover{
+    opacity: 50%;
+  
+}
+
 .info-title{
     font-size: 36px;
     font-weight: 900;
-    color: #1f2937
+    color: #1f2937;
 }
 .quote{
     background-color: #e5e7eb;
     font-size: 36px;
-    font-weight: 200;
+    font-weight: 300;
     font-style: italic;
-    color: #1f2937
+    color: #1f2937;
 }
 header{
     display: flex;
@@ -107,14 +122,16 @@ flex: 1 1 auto;
     padding: 30px 0px 50px;
     text-align: center;
     flex: 1 1 auto;
+    
    
 }
 .info-images{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 150px;
+    gap: 10px;
     padding: 0px 250px 0px;
+    flex-wrap: wrap;
     }
 footer{
     flex: 0;
@@ -124,9 +141,14 @@ footer{
     padding: 100px 250px;
     flex-direction: column;
     flex: 1;
+
 }
 .author{
     align-self: flex-end;
+    font-weight: 900;
+    font-style: normal;
+    color: black;
+    font-size: 28px;
     
 }
 .info{
@@ -173,7 +195,8 @@ footer{
     padding: 20px;
 
 }
-.sign-up button{
-    border-color: white;
+.sign-up-button{
+    border: 2px solid white;
+    
 }
 
